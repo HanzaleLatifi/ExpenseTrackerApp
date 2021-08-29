@@ -9,6 +9,15 @@ body{
 html{
   font-size: 65%;
 }
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+}
+input:focus{
+  outline: none;
+}
 
 
   

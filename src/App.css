@@ -12,7 +12,6 @@ header {
   font-size: 1.7rem;
   letter-spacing: .3rem;
  
-
   
 }
 h1 {
@@ -24,8 +23,9 @@ h1 {
 .app-container {
   background-color: #cde0f72a;
   background-image: linear-gradient(45deg, #c9dcf33d 0%, #b891fc31 100%);
-  min-height: 75vh;
-  min-width: 35vw;
+  height: 75vh;
+  width: 35vw;
+  padding: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -34,3 +34,86 @@ h1 {
   backdrop-filter: blur(4rem);
   box-shadow: -2rem 5rem 8rem rgba(128, 128, 128, 0.1);
 }
+.overView{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.balance{
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: rgb(255, 255, 255,.25);
+  width: 100%;
+  border-radius: 2rem;
+  letter-spacing: .3rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+  border: none;
+}
+.inc-exp-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+.income , .expense{
+  padding: 3rem 7rem;
+  background-color:rgb(255, 255, 255,.2) ;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+
+  
+}
+.newTrans{
+  margin: 1.3rem 0;
+  width: 100%;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: .2rem;
+  padding: 1rem;
+}
+.form-container{
+  width: 100%;
+}
+.form-container form{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+form > input{
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color:rgb(255, 255, 255,.2) ;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+  margin: 1rem 0;
+  border: none;
+
+}
+
+.radio-container label{
+  font-size: 1.8rem;
+  padding: 0 .5rem;
+}
+form >button{
+  display: block;
+  width: 100%;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: .2rem;
+  padding: 1rem;
+  margin: 1.3rem auto;
+  text-align: center;
+}
+
+
+
+
+
+
