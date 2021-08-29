@@ -16,7 +16,7 @@ function ExpenseApp() {
     return (
         <section className='app-container'>
             <OverView income={income} expense={expense} addTransaction={addTransaction}/>
-            <Transaction/>            
+            <Transaction transaction={transaction}/>            
         </section>
     )
 }

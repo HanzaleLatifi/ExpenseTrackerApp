@@ -23,7 +23,7 @@ h1 {
 .app-container {
   background-color: #cde0f72a;
   background-image: linear-gradient(45deg, #c9dcf33d 0%, #b891fc31 100%);
-  height: 75vh;
+  min-height: 75vh;
   width: 35vw;
   padding: 2rem;
   display: flex;
@@ -111,6 +111,22 @@ form >button{
   margin: 1.3rem auto;
   text-align: center;
 }
+.transaction-container{
+  margin: 1rem 0;
+  width: 100%;
+}
+.tranaction{
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  background-color:rgb(255, 255, 255,.2) ;
+  margin: .6rem 0;
+  border-right: 1px solid greenyellow;
+
+}
+
 
 
 
