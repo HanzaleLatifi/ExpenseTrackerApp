@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Form from './Form';
 
-function OverView({expense , income}) {
+function OverView({expense , income , addTransaction}) {
     const [isShowForm, setIsShowForm] = useState(false);
     return (
         <div className='overView'>
@@ -11,7 +11,7 @@ function OverView({expense , income}) {
                 <span className='expense'>expense:{expense}</span>
             </div>
             <button className='newTrans' onClick={()=>setIsShowForm(!isShowForm)} >New Transaction</button>   
-            {isShowForm && <Form/>}  
+            {isShowForm && <Form addTransaction={addTransaction}/>}  
         </div>
         
     )

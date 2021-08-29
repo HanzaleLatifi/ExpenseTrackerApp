@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Form() {
+function Form(props) {
 
 
     const [formValues, setFormValues] = useState({ amount: 0, desc: '', type: 'expense' })
@@ -9,11 +9,15 @@ function Form() {
         setFormValues({ ...formValues, [e.target.name]: e.target.value });
     }
 
+    const submitHandler=(e)=>{
+        e.preventDefault();
+        props.addTransaction(formValues)
 
+    }
 
     return (
         <div className='form-container'>
-            <form>
+            <form onSubmit={submitHandler} >
                 <input type='number' name='amount' value={formValues.amount} onChange={changeHandler} placeholder="amount..."></input>
                 <input type='text' name='desc' value={formValues.desc} onChange={changeHandler} placeholder="description..."></input>
 
