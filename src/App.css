@@ -1,0 +1,36 @@
+.container {
+  background-color: #a9c9ff;
+  background-image: linear-gradient(45deg, #a9c9ff 0%, #ffbbec 100%);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  padding: 3rem 0;
+  font-size: 1.7rem;
+  letter-spacing: .3rem;
+ 
+
+  
+}
+h1 {
+  background: -webkit-linear-gradient(rgb(17, 155, 235), rgb(248, 26, 230));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+.app-container {
+  background-color: #cde0f72a;
+  background-image: linear-gradient(45deg, #c9dcf33d 0%, #b891fc31 100%);
+  min-height: 75vh;
+  min-width: 35vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  border: .7px solid rgba(255, 255, 255, 0.212);
+  backdrop-filter: blur(4rem);
+  box-shadow: -2rem 5rem 8rem rgba(128, 128, 128, 0.1);
+}

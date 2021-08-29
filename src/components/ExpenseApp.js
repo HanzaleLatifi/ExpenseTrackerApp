@@ -2,7 +2,7 @@ import React from 'react'
 
 function ExpenseApp() {
     return (
-        <section>
+        <section className='app-container'>
             
         </section>
     )
