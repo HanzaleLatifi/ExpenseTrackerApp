@@ -6,6 +6,7 @@ function ExpenseApp() {
     const [income, setIncome] = useState(0);
     const [expense, setExpense] = useState(0);
     const [transaction, setTransaction] = useState([]);
+    const [filteredTransaction , setFilteredTransaction ]=useState(transaction); //for search filter
 
     const addTransaction=(formValues)=>{
         const newObj={...formValues , id:Date.now()};
@@ -23,11 +24,21 @@ function ExpenseApp() {
         
     }, [transaction])
 
+    const filterTransaction=(searchInput)=>{
+        if(searchInput===''){
+            setFilteredTransaction(transaction);
+            return
+        }
+        const filtering=transaction.filter(t=>t.desc.toLowerCase().includes(searchInput.toLowerCase()));
+        setFilteredTransaction(filtering)
+    }
+    
+
 
     return (
         <section className='app-container'>
             <OverView income={income} expense={expense} addTransaction={addTransaction}/>
-            <Transaction transaction={transaction}/>            
+            <Transaction transaction={transaction} filterTransaction={filterTransaction} filteredTransaction={filteredTransaction}/>            
         </section>
     )
 }
