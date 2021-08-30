@@ -17,7 +17,9 @@ button{
 }
 input:focus{
   outline: none;
+  border: .1rem solid #fff;
 }
+
 
 
   
