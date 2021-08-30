@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import OverView from './OverView';
 import Transaction from './Transaction';
 
@@ -12,6 +12,17 @@ function ExpenseApp() {
         setTransaction([...transaction , newObj]);
 
     }
+    useEffect(() => {
+        let exp=0 ; 
+        let inc=0 ;
+        transaction.forEach((t)=>{t.type==='expense'? exp+=parseFloat(t.amount) : inc+=parseFloat(t.amount) });
+
+        setExpense(exp);
+        setIncome(inc);
+        
+        
+    }, [transaction])
+
 
     return (
         <section className='app-container'>

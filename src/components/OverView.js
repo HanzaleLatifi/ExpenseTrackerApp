@@ -7,8 +7,8 @@ function OverView({expense , income , addTransaction}) {
         <div className='overView'>
             <div className='balance'>Balance:{income-expense}</div>
             <div className='inc-exp-container' >
-                <span className="income" >income:{income}</span>
-                <span className='expense'>expense:{expense}</span>
+                <span className="income" >Income: {income}</span>
+                <span className='expense'>Expense: {expense}</span>
             </div>
             <button className='newTrans' onClick={()=>setIsShowForm(!isShowForm)} >New Transaction</button>   
             {isShowForm && <Form addTransaction={addTransaction}/>}  

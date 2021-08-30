@@ -62,7 +62,8 @@ h1 {
   
 }
 .income , .expense{
-  padding: 3rem 7rem;
+  width: 48%;
+  padding: 3rem 1rem;
   background-color:rgb(255, 255, 255,.2) ;
   border-radius: 2rem;
   font-size: 1.7rem;
